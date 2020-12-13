@@ -1,3 +1,4 @@
+# Code used from https://github.com/HackerShackOfficial/Smart-Security-Camera
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
