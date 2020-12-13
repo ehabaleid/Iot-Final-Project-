@@ -1,4 +1,4 @@
-
+# Code used from https://github.com/HackerShackOfficial/Smart-Security-Camera with edits by me to add serial port connection and send serial data
 
 import cv2
 import sys
