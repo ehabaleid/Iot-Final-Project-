@@ -10,6 +10,7 @@ import time
 import threading
 import serial
 
+#Connect to serial port to establish link with Xbee
 ser = serial.Serial(port = '/dev/ttyUSB0', baudrate = 9600)
 
 email_update_interval = 600 # sends an email only once in this time interval
@@ -35,6 +36,7 @@ def check_for_objects():
                 print ("Sending email...")
                 sendEmail(frame)
                 print ("done!")
+                #Send "ON" trigger to Xbee so that it can be forwarded to Arduino to turn on Alarm
                 ser.write(b'1')
         except:
             print ("Error sending email: ", sys.exc_info()[0])
