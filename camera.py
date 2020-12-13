@@ -1,3 +1,4 @@
+# Code used from https://github.com/HackerShackOfficial/Smart-Security-Camera
 import cv2
 from imutils.video.pivideostream import PiVideoStream
 import imutils
